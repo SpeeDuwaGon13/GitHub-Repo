@@ -23,6 +23,9 @@ class ProstoPrivetMod(loader.Module):
             await message.edit("<b>Я начинающий создатель модулей</b>")
             return
 
-        if text == "ths":
+        elif text == "ths":
             await message.edit("<b>Это мой первый тестовый модуль :D</b>")
             return
+
+        else:
+            await message.edit("<b>Не существует такого аргумента. Черть</b>")
