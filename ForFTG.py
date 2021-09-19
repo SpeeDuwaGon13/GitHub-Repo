@@ -43,4 +43,4 @@ class TikTokDLMOD(loader.Module):
             await message.delete()
         if response.text:
             await message.client.send_message(message.to_id, f"<b> {response.text} </b>")
-            await.message.delete()
+            await message.delete()
