@@ -4,9 +4,9 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 
 
 def register(cb):
-    cb(TikTokDLMOD())
+    cb(TikTokDLMod())
 
-class TikTokDLMOD(loader.Module):
+class TikTokDLMod(loader.Module):
     """Скачивает ТикТоки без водяного знака"""
     strings = {'name': 'TikTokDlByVova'}
 
