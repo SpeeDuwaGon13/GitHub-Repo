@@ -5,7 +5,7 @@ from telethon import events
 def register(cb):
     cb(ProstoPrivetMod())
 
-class ProstoPrivetMod(loader.Modue):
+class ProstoPrivetMod(loader.Module):
     """тестовый модуль"""
     strings = {'name': 'FirstPosition'}
 
