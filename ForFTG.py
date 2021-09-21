@@ -20,7 +20,7 @@ class TikTokDLMod(loader.Module):
             await message.edit("<b>Нет аргумента или реплая</b>")
             return
         await message.edit("<b>Пожалуйста, поождите...</b>")
-        async with message.conversation(chat) as conv:
+        async with message.client.conversation(chat) as conv:
             if text:
                 try:
                     response = conv.wait_event(events.NewMessage(incoming=True, from_users=1825028508))
